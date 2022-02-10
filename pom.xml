@@ -97,13 +97,10 @@
     </prerequisites>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>github</id>
+            <name>GitHub embedded redis organization Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/embedded-redis-organization/embedded-redis</url>
         </repository>
     </distributionManagement>
     <build>
