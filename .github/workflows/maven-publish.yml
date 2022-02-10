@@ -4,8 +4,9 @@
 name: Maven Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,6 +17,7 @@ jobs:
         uses: actions/cache@v2
         with:
           settings-path: ${{ github.workspace }}
+          path: .m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven-
       - name: Setup Java JDK
