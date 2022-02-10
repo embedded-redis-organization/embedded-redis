@@ -15,7 +15,7 @@ jobs:
       - name: Cache local Maven repository
         uses: actions/cache@v2
         with:
-          path: ~/.m2/repository
+          settings-path: ${{ github.workspace }}
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven-
       - name: Setup Java JDK
@@ -31,4 +31,4 @@ jobs:
       - name: Publish JAR
         run: ./mvnw -B release:prepare release:perform
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
