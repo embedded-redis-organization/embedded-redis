@@ -1,5 +1,6 @@
 embedded-redis
 ==============
+[![Gitter](https://badges.gitter.im/embedded-redis-organization/community.svg)](https://gitter.im/embedded-redis-organization/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Redis embedded server for Java integration testing
 
