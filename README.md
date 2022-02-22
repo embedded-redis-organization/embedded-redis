@@ -183,6 +183,8 @@ Contributors
 
 Changelog
 ==============
+### 0.7.4
+*  No changes only rebrand, same 0.7.3 ozimov version 
 
 ### 0.6
  * Support JDK 6 +
